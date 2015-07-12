@@ -1,0 +1,13 @@
+
+#calendar td>div, th 
+{
+	text-align: right;
+}
+#calendar tbody > tr
+{
+	height : 100px;
+}
+#calendar
+{
+	table-layout: fixed;
+}
