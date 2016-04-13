@@ -31,9 +31,9 @@
     <?php
         include 'Calendar.class.php';
         $events = [
-            "0" => ["date" =>"2015-07-13", "title" => "Label", "link" => "#"],
-            "1" => ["date" =>"2015-07-23", "title" => "Texte", "link" => "#"],
-            "2" => ["date" =>"2015-07-02", "title" => "Hello World", "link" => "#"]
+            ["date" =>"2015-07-13", "title" => "Label", "link" => "#"],
+            ["date" =>"2015-07-23", "title" => "Texte", "link" => "#"],
+            ["date" =>"2015-07-02", "title" => "Hello World", "link" => "#"]
         ];
         Calendar::drawCalendar(date("m"), date('Y'), $events);
     ?>
