@@ -8,10 +8,10 @@
 
 class Calendar {
 
-    // ["0" => ["date" => "2015-10-02", "title"=>"Titre", "color" => "danger", "link" => ""]
-    // ["1" => ["date" => "2015-11-23", "title"=>"Titre2", "color" => "danger", "link" => ""]
-    // ["2" => ["date" => "2015-09-12", "title"=>"Titre3", "color" => "danger", "link" => ""]
-    // ["3" => ["date" => "2015-10-12", "title"=>"Titre4", "color" => "danger", "link" => ""]
+    //  ["date" => "2015-10-02", "title"=>"Titre", "color" => "danger", "link" => ""]
+    //  ["date" => "2015-11-23", "title"=>"Titre2", "color" => "danger", "link" => ""]
+    //  ["date" => "2015-09-12", "title"=>"Titre3", "color" => "danger", "link" => ""]
+    //  ["date" => "2015-10-12", "title"=>"Titre4", "color" => "danger", "link" => ""]
 
     static function drawCalendar($month, $year, $event = [])
     {
@@ -75,7 +75,7 @@ class Calendar {
                     foreach ($event as $key => $val)
                     {
                         if ($val['date'] === $ldate)
-                            $button .= '<a href="'.$val["link"].'" class="label label-primary">'.$val["title"].'</a>';
+                            $button .= '<a href="'.$val["link"].'" class="label label-'.$val['color'].'">'.$val["title"].'</a>';
 
                     }
 
